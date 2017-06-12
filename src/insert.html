@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Insertar Datos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<h2> Registro</h2>
+	<form #f="ngForm" (ngSubmit)="envioDato(f)" >
+			<ion-list>
+						<ion-item>
+							<ion-label floating >Nombre </ion-label>
+							<ion-input type= "text" name= "name" ngModel #name = "ngModel" > </ion-input>
+						</ion-item>
+						<ion-item>
+							<ion-label floating >Precio </ion-label>
+							<ion-input type= "text" name= "price" ngModel #price = "ngModel" > </ion-input>
+						</ion-item>
+						<ion-item>
+							<button ion-button full block color = "danger"> Enviar</button>
+						</ion-item>
+
+			</ion-list>
+
+	</form>
+
+
+</ion-content>
